@@ -23,7 +23,7 @@ jobs:
       - name: Run Test
         run: newman run ServeRest.postman_collection.json -e serveRest_env.postman_environment.json -r cli,htmlextra
 
-      - name: Report
+      - name: Reports
         uses: actions/upload-artfact@v3.1.2
         with:
           name: Report
